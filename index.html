@@ -185,6 +185,30 @@ background: transparent;
                 <textarea id="message" class="materialize-textarea" cols="30" rows="10"></textarea>
                 <label for="message">Yr message!</label>
               </div>
+              <div class="input-field">
+                <input type="text" id="date" class="datepicker">
+                <label for="date">choose a date and rent a Si</label>
+              </div>
+              <div class="input-field">
+                <p>
+                  services required...
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox">
+                    <span>Veggie Cooking</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox">
+                    <span>Chess</span>
+                  </label>
+                </p>
+              </div>
+              <div class="input-field">
+                <button class="btn center">Submit</button>
+              </div>
             </form>
           </div>
         </div>
@@ -201,6 +225,9 @@ background: transparent;
        $('.materialboxed').materialbox()
        $('.parallax').parallax();
        $('.tabs').tabs();
+       $('.datepicker').datepicker({
+         disableWeekends: true,
+       })
       })
     </script>
   </body>
