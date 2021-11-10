@@ -33,6 +33,15 @@
         padding-top: 4vw;
         padding-bottom: 4vw;
       }
+    .tabs .indicator{
+      color: red;
+      background-color: #1a237e;
+    }
+
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+background: transparent;
+    }
+
       @media screen and (max-width: 670px) {
         header {
           min-height: 500px;
@@ -106,13 +115,42 @@
       </div>
     </div>
 
-    <!-- services / tabs -->
-    <div class="container">
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugiat odio recusandae adipisci at deleniti.</p>
+ <section class="container section" id="services">
+<div class="row">
+  <div class="col s12 l4">
+    <h2 class="indigo-text text-darken-4">
+      What I do is secret......
+    </h2>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugiat odio recusandae adipisci at deleniti.</p>
        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugiat odio recusandae adipisci at deleniti.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugiat odio recusandae adipisci at deleniti.</p>
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugiat odio recusandae adipisci at deleniti.</p>
+        
+  </div>
+  <div class="col s12 l6 offset-l2">
+    <ul class="tabs">
+      <li class="tab col s6">
+        <a href="#fishing" class="indigo-text text-darken-4">Fishing</a>
+      </li>
+      <li class="tab col s6">
+        <a href="#veganism" class="indigo-text text-darken-4">Veganism</a>
+      </li>
+    </ul>
+    <div class="col s12" id="veganism">
+      <p class="flow-text indigo-text text-darken-4">VEGANISM</p>
+ <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugiat odio recusandae adipisci at deleniti.</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugiat odio recusandae adipisci at deleniti.</p>
+
     </div>
+    <div class="col s12" id="fishing">
+      <p class="flow-text indigo-text text-darken-4">FISHING</p>
+ <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugiat odio recusandae adipisci at deleniti.</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugiat odio recusandae adipisci at deleniti.</p>
+  
+    </div>
+  </div>
+</div>
+
+ </section>
 
     <!-- parallax -->
       <div class="parallax-container">
@@ -138,6 +176,7 @@
        $('.sidenav').sidenav();
        $('.materialboxed').materialbox()
        $('.parallax').parallax();
+       $('.tabs').tabs();
       })
     </script>
   </body>
